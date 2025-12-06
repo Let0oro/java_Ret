@@ -1,4 +1,4 @@
-package lib;
+package jmb;
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -29,7 +29,7 @@ public class in
             {
                 System.out.print(mensaje);
                 valor = in.nextByte();
-                if(!in.nextLine().equals("")) System.out.println("Pulsa enter al escribir el dato");
+                if(!in.nextLine().isEmpty()) System.out.println("Pulsa enter al escribir el dato");
                 else break;
             }
             catch(Exception e)
@@ -54,7 +54,7 @@ public class in
             {
                 System.out.print(mensaje);
                 valor = in.nextShort();
-                if(!in.nextLine().equals("")) System.out.println("Pulsa enter al escribir el dato");
+                if(!in.nextLine().isEmpty()) System.out.println("Pulsa enter al escribir el dato");
                 else break;
             }
             catch(Exception e)
@@ -80,7 +80,7 @@ public class in
             {
                 System.out.print(mensaje);
                 valor = in.nextInt();
-                if(!in.nextLine().equals("")) System.out.println("Pulsa enter al escribir el dato");
+                if(!in.nextLine().isEmpty()) System.out.println("Pulsa enter al escribir el dato");
                 else break;
             }
             catch(Exception e)
@@ -105,7 +105,7 @@ public class in
             {
                 System.out.print(mensaje);
                 valor = in.nextLong();
-                if(!in.nextLine().equals("")) System.out.println("Pulsa enter al escribir el dato");
+                if(!in.nextLine().isEmpty()) System.out.println("Pulsa enter al escribir el dato");
                 else break;
             }
             catch(Exception e)
@@ -130,7 +130,7 @@ public class in
             {
                 System.out.print(mensaje);
                 valor = in.nextFloat();
-                if(!in.nextLine().equals("")) System.out.println("Pulsa enter al escribir el dato");
+                if(!in.nextLine().isEmpty()) System.out.println("Pulsa enter al escribir el dato");
                 else break;
             }
             catch(Exception e)
@@ -155,7 +155,7 @@ public class in
             {
                 System.out.print(mensaje);
                 valor = in.nextDouble();
-                if(!in.nextLine().equals("")) System.out.println("Pulsa enter al escribir el dato");
+                if(!in.nextLine().isEmpty()) System.out.println("Pulsa enter al escribir el dato");
                 else break;
             }
             catch(Exception e)
@@ -180,7 +180,7 @@ public class in
             {
                 System.out.print(mensaje);
                 valor = in.nextBigInteger();
-                if(!in.nextLine().equals("")) System.out.println("Pulsa enter al escribir el dato");
+                if(!in.nextLine().isEmpty()) System.out.println("Pulsa enter al escribir el dato");
                 else break;
             }
             catch(Exception e)
@@ -205,7 +205,7 @@ public class in
             {
                 System.out.print(mensaje);
                 valor = in.nextBigDecimal();
-                if(!in.nextLine().equals("")) System.out.println("Pulsa enter al escribir el dato");
+                if(!in.nextLine().isEmpty()) System.out.println("Pulsa enter al escribir el dato");
                 else break;
             }
             catch(Exception e)
@@ -239,7 +239,7 @@ public class in
                 System.out.println("Valor incorrecto");
                 continue;
             }
-            if(!in.nextLine().equals("")) System.out.println("Pulsa enter al escribir el dato");
+            if(!in.nextLine().isEmpty()) System.out.println("Pulsa enter al escribir el dato");
             else break;
         }
 
@@ -258,7 +258,7 @@ public class in
         {
             System.out.print(mensaje);
             valor = in.next();
-            if(!in.nextLine().equals("")) System.out.println("Pulsa enter al escribir el dato");
+            if(!in.nextLine().isEmpty()) System.out.println("Pulsa enter al escribir el dato");
             else break;
         }
 
@@ -292,7 +292,7 @@ public class in
             System.out.print(mensaje);
             valor = in.next();
             if(valor.length()!=1) System.out.println("Escribe un caracter");
-            else if(!in.nextLine().equals("")) System.out.println("Pulsa enter al escribir el dato");
+            else if(!in.nextLine().isEmpty()) System.out.println("Pulsa enter al escribir el dato");
             else break;
         }
 
@@ -323,11 +323,7 @@ public class in
             ProcessBuilder pb = new ProcessBuilder(s);
             pb.inheritIO().start().waitFor();
         }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-        catch (InterruptedException e)
+        catch (IOException | InterruptedException e)
         {
             e.printStackTrace();
         }
@@ -337,11 +333,11 @@ public class in
     static public void cls()
     {
         String so = System.getProperty("os.name");
-        if(so.indexOf("Window")!=-1)
+        if(so.contains("Window"))
             proceso("cmd","/c","cls");
         else
             for(int i=0;i<100;i++)
-                System.out.println("");
+                System.out.println();
     }
 
     /* ***************************************************** */
@@ -490,4 +486,33 @@ public class in
 
         return valor;
     }
+
+    static void cstmCls(){
+        System.out.print("\33[2J\33[H");
+    }
+
+    static int mostrarMenu(int len, String[] opciones){
+        cstmCls();
+        StringBuilder salida = new StringBuilder("OPCION ACCION\n====== ====================================\n");
+        for (int i = 0; i < len; i++) salida.append(String.format("%4d   %s\n", i + 1, opciones[i]));
+        salida.append("otro  Terminar\n");
+        salida.append("-------------------------------------------");
+        System.out.println(salida);
+        return leerInt("OPCION: ");
+    }
+
+    static public int menuOpcion(String ...opciones){
+        int opcion, len = opciones.length;
+        do opcion = mostrarMenu(len, opciones); while (opcion < 0 || opcion > len);
+        return opcion;
+    }
+
+    public static void header(String op){
+        System.out.println("* ***************************** *");
+        System.out.printf ("* %29s *", op.toUpperCase());
+        System.out.println("* ***************************** *");
+    }
+
+
+
 }
