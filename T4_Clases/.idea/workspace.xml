@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="727401c4-3207-4a64-a1ac-440c84654171" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../E01T3_Arrays/E01T3_Arrays_Cell_access.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E01T3_Arrays/src/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E02T3_Arrays/E02T3_Arrays.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E03T3_Arrays/E03T3_Arrays.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E05T3_Arrays/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E05T3_Arrays/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E05T3_Arrays/E05T3_Arrays.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E07T3_Arrays/E07T3_Arrays.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E08T3_Arrays/E08T3_Arrays.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E15T3_Arrays/E15T3_Arrays.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E16T3_Arrays/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E16T3_Arrays/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E16T3_Arrays/E16T3_Arrays.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E17T3_Arrays/E17T3_Arrays.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E26T3_Arrays/E26T3_Arrays.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E78T2_Strings_replace_spaces/E78T2_Strings_replace_spaces.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E79T2_Strings_uppercase_revert/E79T2_Strings_uppercase_revert.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E80T2_String_subcadena/E80T2_String_subcadena.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E81T2_Strings_SubcadenaSin/E81T2_Strings_SubcadenaSin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E82T2_Strings_Palindromo/E82T2_Strings_Palindromo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E83T2_Strings_palindromo_num/E83T2_Strings_palindromo_num.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E84T2_Strings_Contar_Caracteres/E84T2_Strings_Contar_Caracteres.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E85T2_Strings_Ahorcado/E85T2_Strings_Ahorcado.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JMB1_Arrays/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JMB1_Arrays/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JMB1_Arrays/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JMB1_Arrays/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JMB1_Arrays/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JMB1_Arrays/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JMB1_Arrays/JMB1_Arrays.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JMB1_ex_ev/JMB1_ex_ev.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JMB2_ex_ev/JMB2_ex_ev.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JMB_Arrays/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JMB_Arrays/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JMB_Arrays/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JMB_Arrays/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JMB_Arrays/JMB2_Arrays.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Regexp1/Regexp72.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Regexp75/Regexp75.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Regexp75/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RepasoExaamen/RepasoExaamen.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RepasoExaamen/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../example/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../example/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib_/src/jmb/Strings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib_/src/jmb/arrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JMB_EX_T2_E2/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JMB_EX_T2_E2/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../example/example.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../example/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_/.idea/artifacts/lib_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lib_/.idea/artifacts/lib_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_/src/jmb/auxMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lib_/src/jmb/auxMath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_/src/jmb/in.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lib_/src/jmb/in.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_/src/jmb/wrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lib_/src/jmb/Vec2D.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="39RPpiRrlh3EGsr06xNRemOkykh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/juanma/IdeaProjects/T4_Clases"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="727401c4-3207-4a64-a1ac-440c84654171" name="Changes" comment="" />
+      <created>1770656094372</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1770656094372</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -7,7 +7,15 @@ public class tables {
         String paint(int absRow, int absCol);
     }
 
+    public static String paintPrettyTableWAids(int height, int width, Painter userP){
+        return paintPrettyTable(true, height, width, userP);
+    }
+
     public static String paintPrettyTable(int height, int width, Painter userP){
+        return paintPrettyTable(false, height, width, userP);
+    }
+
+    public static String paintPrettyTable(boolean aids, int height, int width, Painter userP){
         StringBuilder salida = new StringBuilder();
 
         int sizeTileW = 4;
@@ -20,6 +28,13 @@ public class tables {
         int boundW = width-1;
         int boundH = height-1;
 
+        if (aids){
+            for (int i = 0; i < width/sizeTileW; i++) {
+                System.out.printf("  %-2d", i);
+            }
+            System.out.println();
+        }
+        int idx = 0;
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
 
@@ -55,6 +70,7 @@ public class tables {
                 }
             }
 
+            if (aids && idx++ % 2 != 0) salida.append(idx/2-1);
             salida.append("\n");
         }
         return String.valueOf(salida);

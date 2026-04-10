@@ -6,6 +6,8 @@ import java.math.BigInteger;
 import java.util.Scanner;
 import java.util.function.Predicate;
 
+import static java.lang.System.out;
+
 public class in
 {
     final static public Scanner in = new Scanner(System.in);
@@ -503,14 +505,94 @@ public class in
 
     static public int menuOpcion(String ...opciones){
         int opcion, len = opciones.length;
-        do opcion = mostrarMenu(len, opciones); while (opcion < 0 || opcion > len);
+        do opcion = mostrarMenu(len, opciones); while (opcion > 0 && opcion <= len);
         return opcion;
+    }
+
+    static String escribirOpcion(int num, String name) {
+        return String.format("%4d   %s\n", num, name);
+    }
+
+    static int mostrarMenuBasic(){
+        cstmCls();
+        String salida = ("OPCION ACCION\n====== ====================================\n");
+        salida += escribirOpcion(1, "Opcion A");
+        salida += escribirOpcion(2, "Opcion B");
+        salida += "otro  Terminar\n";
+        salida += "-------------------------------------------";
+        System.out.println(salida);
+        return leerInt("OPCION: ");
+    }
+
+    static public void menuOpcionBasic(int lenOp){
+        int opcion;
+        do {
+            opcion = mostrarMenuBasic();
+            switchMenuBasic(opcion);
+        } while (opcion > 0 && opcion <= lenOp);
     }
 
     public static void header(String op){
         System.out.println("* ***************************** *");
         System.out.printf ("* %29s *", op.toUpperCase());
         System.out.println("* ***************************** *");
+    }
+
+    public static void switchMenuBasic(int opcion) {
+        switch (opcion) {
+            case 1 -> {
+                header("get random int");
+//                genRandomInt(0, 10);
+            }
+            case 2 -> {
+                header("get random double");
+//                genRandomDouble(0, 20);
+            }
+            default -> {}
+        }
+    }
+
+    public static int leerIntJmb (Scanner sc, String msg) {
+        if (msg.isEmpty()) throw new IllegalArgumentException("El mensaje no puede estar vacío");
+
+        int num;
+        while (true)
+            try {
+                System.out.print(msg);
+                num = sc.nextInt();
+                String resto = sc.nextLine();
+                if (resto.isEmpty()) {
+                    if (num >= 0 && num <= 120) break;
+                    System.out.println("Valor inválido");
+                } else
+                    System.out.println("Pulsa Enter después de introducir el dato");
+            } catch (Exception e) {
+                System.out.println("Valor inválido");
+                sc.nextLine();
+            }
+
+//        System.out.println("num = " + num);
+        return num;
+    }
+
+    public static String leerStringJmb(Scanner sc, String msg) {
+        if (msg.isEmpty()) throw new IllegalArgumentException("El mensaje no puede estar vacío");
+
+        String str;
+        while (true)
+            try {
+                System.out.print(msg);
+                str = sc.next();
+                String resto = sc.nextLine();
+                if (resto.isEmpty()) break;
+                else System.out.println("Pulsa Enter después de introducir el dato");
+            } catch (Exception e) {
+                System.out.println("Valor inválido");
+                sc.nextLine();
+            }
+
+//        System.out.println("num = " + num);
+        return str;
     }
 
 

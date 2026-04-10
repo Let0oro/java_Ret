@@ -255,7 +255,7 @@ public class cmd {
      * @param text text to colorize
      * @param color color code (e.g., RED, GREEN, BLUE)
      */
-    static String color(String text, int color) {
+    public static String color(String text, int color) {
         return b(FORMAT, String.valueOf(color)) + text + resetAll;
     }
 
@@ -264,7 +264,7 @@ public class cmd {
      * @param text text to colorize
      * @param bgColor background color code (e.g., BG_RED, BG_GREEN)
      */
-    static String bgColor(String text, int bgColor) {
+    public static String bgColor(String text, int bgColor) {
         return b(FORMAT, String.valueOf(bgColor)) + text + resetAll;
     }
 
@@ -274,7 +274,7 @@ public class cmd {
      * @param fgColor foreground color code
      * @param bgColor background color code
      */
-    static String color(String text, int fgColor, int bgColor) {
+    public static String color(String text, int fgColor, int bgColor) {
         return b(FORMAT, String.valueOf(fgColor), SEPARATOR, String.valueOf(bgColor)) + text + resetAll;
     }
 
@@ -283,7 +283,7 @@ public class cmd {
      * @param text text to style
      * @param style style code (e.g., BOLD, UNDERLINE, ITALIC)
      */
-    static String style(String text, int style) {
+    public static String style(String text, int style) {
         return b(FORMAT, String.valueOf(style)) + text + resetAll;
     }
 
@@ -293,7 +293,7 @@ public class cmd {
      * @param color color code
      * @param style style code
      */
-    static String colorStyle(String text, int color, int style) {
+    public static String colorStyle(String text, int color, int style) {
         return b(FORMAT, String.valueOf(style), SEPARATOR, String.valueOf(color)) + text + resetAll;
     }
 
@@ -304,7 +304,7 @@ public class cmd {
      * @param bgColor background color code
      * @param style style code
      */
-    static String colorStyle(String text, int fgColor, int bgColor, int style) {
+    public static String colorStyle(String text, int fgColor, int bgColor, int style) {
         return b(FORMAT, String.valueOf(style), SEPARATOR, String.valueOf(fgColor), SEPARATOR, String.valueOf(bgColor))
                 + text + resetAll;
     }
