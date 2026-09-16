@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<AnchorPane id="root" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="320.0" prefWidth="570.0" stylesheets="@aplicacion.css" xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="jmb.juanma.form00.views.AplicacionView">
+
+        <children>
+        <Button fx:id="sumar" disable="true" focusTraversable="false" layoutX="45.0" layoutY="42.0" prefHeight="52.0"
+                prefWidth="103.0" text="_Sumar" />
+        <Button fx:id="restar" disable="true" focusTraversable="false" layoutX="176.0" layoutY="42.0" prefHeight="52.0"
+                prefWidth="94.0" text="_Restar" />
+        <Button fx:id="multiplicar" disable="true" focusTraversable="false" layoutX="300.0" layoutY="42.0" prefHeight="52.0"
+                prefWidth="94.0" text="_Multiplicar" />
+        <Button fx:id="dividir" disable="true" focusTraversable="false" layoutX="425.0" layoutY="42.0" prefHeight="52.0"
+                prefWidth="94.0" text="_Dividir" />
+        <Label fx:id="labNumero1" layoutX="116.0" layoutY="134.0" text="Número" />
+        <Label fx:id="labNumero2" layoutX="116.0" layoutY="178.0" text="Número" />
+        <Label fx:id="labResultado" layoutX="116.0" layoutY="225.0" text="Resultado" />
+        <TextField fx:id="numero1" layoutX="224.0" layoutY="129.0" />
+        <TextField fx:id="numero2" layoutX="226.0" layoutY="173.0" />
+        <TextField fx:id="resultado" editable="false" focusTraversable="false" layoutX="226.0" layoutY="220.0" />
+        <TextField fx:id="estado" editable="false" focusTraversable="false" layoutY="290.0" prefHeight="20.0" prefWidth="570.0"
+                   text="Comienza la aplicación" />
+    </children>
+
+</AnchorPane>
