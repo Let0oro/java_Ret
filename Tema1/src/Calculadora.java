@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Calculadora {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -20,9 +20,15 @@ public class Main {
     
     static void calculator (Scanner sc) {
         int opt = 0;
+        System.out.println("1. Sumar");
+        System.out.println("2. Restar");
+        System.out.println("3. Multiplicar");
+        System.out.println("4. Dividir");
+        System.out.println("5. Salir");
+
         while (true) {
             
-            opt = readInt(sc, "Elige un operador 1[+] 2[-] 3[*] 4[/] 5[exit]: ");
+            opt = readInt(sc, "Elige un operador: ");
             if (opt < 1 || opt > 4) break;
             System.out.println();
             int n1 = readInt(sc, "Número 1: ");
