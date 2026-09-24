@@ -41,7 +41,7 @@ public abstract class Brawler {
     }
 
     public String toString() {
-        return String.format("[%s:%d]", this.getName().toUpperCase(), this.getHealth());
+        return String.format("[%s:%d]", this.getName(), this.getHealth());
     }
 
     public abstract void actionByType(Brawler brawler);
