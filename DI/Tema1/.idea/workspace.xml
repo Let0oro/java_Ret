@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac0f9979-35d7-4084-8928-695f0f4a96e6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/UserSys/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UserSys/Guest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UserSys/SystemGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UserSys/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UserSys/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BrawlStars/Brawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BrawlStars/Brawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BrawlStars/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BrawlStars/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
